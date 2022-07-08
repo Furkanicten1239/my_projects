@@ -3,6 +3,10 @@ import numpy as np
 import time
 from pynput.keyboard import Key, Controller
 
+
+###NOTE!!!! This code works for blue cable. If you have cable in other colors, just adjust the range of color in the code.
+
+
 keyboard = Controller()
 webcam=cv.VideoCapture(0)
 
