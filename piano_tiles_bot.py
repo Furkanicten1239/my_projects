@@ -11,15 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 
-##BUGLAR
-#BAZEN SATIR ÇOK KAYABİLİYOR
-#VİDEOYU İZLE DİYİP TEKRAR BAŞLAYINCA X İ 1DEN FAZLA KEZ ARTTIRIYOR.
 
-##GELİŞTİRMEK İSTERSEN:
-#TAM EKRAN MODUNA GÖRE AYARLAYARAK DAHA KESİN SONUÇ ELDE EDEBİLİRSİN.
-#ZAMANA GÖRE KAÇ PIXEL ARTACAĞI DAHA İYİ AYARLANMALI
-#BELİRLİ DÜĞMELER ATAYARAK PROCESSINGE NE ZAMAN BAŞLAYI NE ZAMAN DURMASI GEREKTİĞİNİ KODA EKLEYEBİLİRSİN.
-#2 FARKLI MASKING(BİR ÜST BİR ALT PİKSELLERDE) YAPARAK DAHA HIZLI SONUÇ ELDE EDEBİLİRSİN(BİRAZ BOŞ OLABİLİR,ÖNEC ÜSTTEKİNİ DENE)
 
 x=0
 y=450
@@ -38,6 +30,8 @@ driver.get("https://gaamess.com/piano-tiles-2/")
 actionChain = webdriver.ActionChains(driver)
 time.sleep(1)
 
+##Those coordinates of points are given by checking the places of each black regions in screen on the game. If your code doesnt work, adjust the coordinates where
+## are the piano keys.
 
 while True:
     #screen=np.array(ImageGrab.grab(bbox=(625,590,950,600)))
