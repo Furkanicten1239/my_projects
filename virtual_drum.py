@@ -51,13 +51,13 @@ while True:
 
     if amount_of_green>0:
         print("drum1111111111111")
-        py.mixer.music.load("C:/Users/gazi/Desktop/kodlama/opencv_projects/music/drum1.mp3")
+        py.mixer.music.load("full adress of your mp3 file")
         py.mixer.music.play()
         
     
     if amount_of_red>0:
         print("drum2222222222")
-        py.mixer.music.load("C:/Users/gazi/Desktop/kodlama/opencv_projects/music/drum2.mp3")
+        py.mixer.music.load("full adress of your mp3 file")
         py.mixer.music.play()
         
 
