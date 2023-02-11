@@ -1,3 +1,7 @@
+"""
+The purpose of this code is teaching AI some objects such as clothes or shoes. To do that, I've used MNIST fashion dataset. In addition, for reducing errors
+which can be caused by zero values, I have used leaky-RelU function.
+"""
 import torch
 import torch.nn as nn
 import torchvision#libraries to setting up mnist datasets
@@ -114,7 +118,7 @@ for epoch in tqdm(range(epochs)):
     print(f"\nTrain loss: {train_loss:.5f} | Test loss: {test_loss:.5f}")    
 print(len(train_data.classes))
 
-####  VISUALIZING AND GETTİNG VALUES OF DIFFERENCES BETWEEN TRAINED MODEL RESULTS AND ORIGINAL RESUTLS
+####  VISUALIZING AND GETTING VALUES OF DIFFERENCES BETWEEN TRAINED MODEL RESULTS AND ORIGINAL RESUTLS
 
 def visualize_and_predict(model:torch.nn.Module, data:list, device: torch.device=device):
     pred_probs=[]
